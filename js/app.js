@@ -177,6 +177,11 @@ let questions = [
 //     },
 // ]
 
+let currentQuestion = 0
+let score = 0
+let quizActive = false
+let gameEnded = false
+
 
 
 
