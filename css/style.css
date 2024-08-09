@@ -7,10 +7,20 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Angkor", serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRxC3taIl6nAZG7o83d9GNS-ewf0trtqfvQ&s);
     background-size: cover;
+    
+}
+
+.logo {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: lighter;
+    display: flex;
+    font-size: 25px;
+    
     
 }
 
@@ -19,6 +29,7 @@ body {
     margin: 300px auto;
     padding: 20px;
     display: flex;
+    justify-content: center;
 
 }
 
