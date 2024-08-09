@@ -18,15 +18,32 @@ body {
     text-align: center;
     margin: 300px auto;
     padding: 20px;
-    border: 0px solid #ccc;
-    border-radius: 1px;
-    box-shadow: 0px 2px 5px red;
     display: flex;
 
 }
 
 #question {
-    
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#answer-choices {
+    list-style: none;
+    padding: 0;
+}
+
+#answer-choices li {
+    margin: 10px 0;
+}
+
+#start-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
