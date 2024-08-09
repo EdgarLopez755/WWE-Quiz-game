@@ -20,6 +20,7 @@ body {
     font-weight: lighter;
     display: flex;
     font-size: 25px;
+    justify-content: center;
     
     
 }
@@ -55,6 +56,14 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+p {
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+
 }
 
 

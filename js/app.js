@@ -1,12 +1,4 @@
-const startBtn = document.querySelector('.start.btn')
-
-
-
-
-
-
-
-
+// const quiz
 
 
 
