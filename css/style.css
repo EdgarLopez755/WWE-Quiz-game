@@ -5,12 +5,17 @@
 body {
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-family: "Angkor", serif;
     font-weight: 100;
     font-style: normal;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRxC3taIl6nAZG7o83d9GNS-ewf0trtqfvQ&s);
     background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    
     
 }
 
@@ -19,18 +24,16 @@ body {
     color: whitesmoke;
     font-weight: lighter;
     display: flex;
-    font-size: 25px;
+    font-size: 30px;
     justify-content: center;
     
     
 }
 
 #quiz-box {
-    text-align: center;
-    margin: 300px auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    
+    flex-direction: column;
+    
 
 }
 
@@ -38,15 +41,18 @@ body {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 25px;
+    display: flex;
 }
 
 #answer-choices {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 #answer-choices li {
     margin: 10px 0;
+    display: flex;
 }
 
 #start-btn {
@@ -58,6 +64,7 @@ body {
     cursor: pointer;
     display: flex;
     margin: 7px;
+    flex-direction: row;
     
     
 }
@@ -71,6 +78,7 @@ body {
     cursor: pointer;
     display: flex;
     margin: 7px;
+    flex-direction: row;
     
 }
 
@@ -82,8 +90,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
     margin: 7px;
+    flex-direction: row;
     
 }
 
@@ -95,4 +103,11 @@ p {
 
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+    
+}
 
