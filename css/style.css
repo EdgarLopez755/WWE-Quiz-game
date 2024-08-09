@@ -57,6 +57,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     display: flex;
+    margin: 7px;
+    
+    
 }
 
 #submit-btn {
@@ -67,6 +70,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     display: flex;
+    margin: 7px;
+    
 }
 
 #reset-btn {
@@ -77,6 +82,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     display: flex;
+    justify-content: space-between;
+    margin: 7px;
+    
 }
 
 p {
