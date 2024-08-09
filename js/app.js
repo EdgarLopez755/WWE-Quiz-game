@@ -37,7 +37,6 @@ const startBtn = document.querySelector('.start.btn')
 
 
 
-
 let firstQuestions = [
     {
         numb: 1,
@@ -120,7 +119,6 @@ let firstQuestions = [
         ]
     },
 ]
-
 
 
 
