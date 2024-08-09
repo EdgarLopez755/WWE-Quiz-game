@@ -56,6 +56,27 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+}
+
+#submit-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+#reset-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
 }
 
 p {
