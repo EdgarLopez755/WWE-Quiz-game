@@ -2,9 +2,6 @@
 
 
 
-
-
-
 body {
     background-color: black;
     display: flex;
@@ -17,12 +14,19 @@ body {
     
 }
 
-.header {
+#quiz-box {
     text-align: center;
+    margin: 300px auto;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 1px;
+    box-shadow: 0px 2px 5px red;
     display: flex;
-    flex-direction: column;
-    height: 100%;
+
 }
 
+#question {
+    
+}
 
 
