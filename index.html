@@ -8,28 +8,30 @@
     <title>WWE Quiz Game</title>
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         <a href="#" class="logo">WWE Quiz Game ! 👊🏽💢</a>
         <p>Test your knowledge on WWE with this ultimite fan quiz ! ARE YOU READY ? If you get 5 questions wrong I got two words for you! You lose...
         </p></header>
     <div id="quiz-box">
         <select id ="category-select">
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            </select>
+            <option value="category1">Royal Rumble</option>
+            <option value="category2">Champions</option>
+        </select>
         <h1 id="question"></h1>
         <ul id="answer-choices"></ul>
         <div class="button-container">
-             <button id="start-btn">Start Quiz</button>
-             <button id="submit-btn">Submit</button>
-             <button id="reset-btn">Reset Quiz</button>
+            <button id="start-btn">Start Quiz</button>
+            <button id="submit-btn">Submit</button>
+            <button id="reset-btn">Reset Quiz</button>
+            
+        </div>
+        <p id="win-message"></p>
+        <p id="lose-message"></p>
         
-     </div>
-     <p id="win-message"></p>
-     <p id="lose-message"></p>
-
     </div>
     
+    <!-- <audio controls><source src="Across the Nation.mp3"> -->
+    <audio id="myAudio" src="Across the Nation.mp3" autoplay></audio>   
     
 
     
