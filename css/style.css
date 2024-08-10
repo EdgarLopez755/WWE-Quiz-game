@@ -64,7 +64,7 @@ body {
 #answer-choices li {
     margin: 10px 0;
     display: flex;
-    color: red;
+    color: yellow;
 }
 
 #start-btn {

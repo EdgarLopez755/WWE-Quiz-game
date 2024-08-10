@@ -5,11 +5,14 @@ const startButton = document.getElementById('start-btn');
 const resetButton = document.getElementById('reset-btn');
 const winMessage = document.getElementById('win-message');
 const loseMessage = document.getElementById('lose-message');
+const categorySelect = document.getElementById('category-select')
 
 
 
-let questions = [
+let questions = {
+    category1: [
   {
+
     question: 'Who is the greatest WWE wrestler of all time?',
     choices: ['John Cena', 'The Rock', 'Hulk Hogan', 'Stone Cold'],
     correctAnswer: 'Stone Cold'
@@ -61,7 +64,62 @@ let questions = [
     correctAnswer: 'Charlotte Flair'
   },
   
- ];
+ ],
+ category2: [
+    {
+        question: 'Who was the first WWE Champion?',
+        choices: ['Rick Flair', 'Hulk Hogan', 'Iron Shiek', 'Lou Thesz'],
+        correctAnswer: 'Lou Thesz'
+    },
+    {
+        question: 'Which wrestler held the WWE Championship for the longest consecutive reign?',
+        choices: ['Hulk Hogan', 'Roman Reigns', 'HHH', 'The Rock'],
+        correctAnswer: 'Hulk Hogan'
+    },
+    {
+        question: 'How many times has John Cena won the WWE Championship?',
+        choices: ['5 times', '17 times', '2 times', '16 times'],
+        correctAnswer: '16 times'
+      },
+      {
+        question: 'Who was the youngest WWE Champion in history?',
+        choices: ['The Rock', 'Randy Orton', 'Brock Lesner', 'Booker T'],
+        correctAnswer: 'Brock Lesnar'
+      },
+      {
+        question: 'What is the name of The Rocks finishing move?',
+        choices: ['The Eyebrow', 'What\'s Cooking', 'The Rock Bottom', 'The Rocks People'],
+        correctAnswer: 'The Rock Bottom'
+      },
+      {
+        question: 'Which wrestler defeated Hulk Hogan to become the first WWF Champion?',
+        choices: ['The Iron Shiek', 'The Iron Claw', 'The Iron Fist', 'The Iron Clothes'],
+        correctAnswer: 'The Iron Sheik'
+      },
+      {
+        question: 'Who was the first WWE Womens Champion?',
+        choices: ['Charlotte Flair', 'The Fabulous Moolah', 'Becky Lynch', 'The Rock'],
+        correctAnswer: 'The Fabulous Moolah'
+      },
+      {
+        question: 'What is the name of the championship belt currently held by Cody Rhodes ?',
+        choices: ['WWE Championship', 'Womens Championship', 'US Championship', 'IC Championship'],
+        correctAnswer: 'WWE Championship'
+      },
+      {
+        question: 'Who was the first Monday Night Raw Triple Crown Champion?',
+        choices: ['The Rock', 'Carlito', 'Edge', 'HHH'],
+        correctAnswer: 'HHH'
+      },
+      {
+        question: 'Who can you not see ?',
+        choices: ['HHH', 'John Cena', 'Stone Cold', 'The Rock'],
+        correctAnswer: 'John Cena'
+      },
+ ]
+};
+ 
+ 
 
 
 
@@ -86,9 +144,9 @@ function render() {
             loseMessage.textContent = 'You Lose!'
         }
         submitButton.style.display = 'none'
-        resetButton.style.display = 'black'
+        resetButton.style.display = 'block'
     } else if (quizActive) {
-        
+        loadQuestion()
     } else {
         startButton.style.display = 'block'
         submitButton.style.display = 'none'
@@ -97,6 +155,22 @@ function render() {
         loseMessage.textContent = ''
     }
 }
+
+function loadQuestion() {
+    if (currentQuestion >= question.length) {
+        return;
+    }
+    const currentQuizData = questions[currentCategory][currentQuestion];
+    question.textContent = currentQuizData.question
+
+    choices.innerHTML = ''
+    currentQuizData.choices.forEach(choice => {
+        const li = document.createElement('li')
+        li.textContent = choice
+        choices.appendChild(li)
+    })
+}
+
 
 
 
