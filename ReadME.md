@@ -1,6 +1,19 @@
 # Project 1 (WWE Quiz game)
 
-![Logo](https://image-cdn.essentiallysports.com/wp-content/uploads/SmackDown-Fist-Photo.jpg)
+![Logo](https://upload.wikimedia.org/wikipedia/commons/c/c4/WWE_official_logo.svg) Quiz Game
+
+
+- The reason I wanted to do a quiz game on WWE is because I have always loved watching wreslting since I was a little kid and I knew that make a quiz game after something I love would be a great game.
+- My game will have 2 categories of WWE questions and if the user gets more than 5 answers wrong they lose.
+- If the user gets the rest correct they win the game.
+
+
+## GitHub Deployed link:
+- (https://edgarlopez755.github.io/WWE-Quiz-game/)
+
+
+
+
 
 ## User Stories
 - As a user, I want to be able to see clearly the name of the quiz.
@@ -40,7 +53,7 @@
 - __My first category is going to be Royal Rumble winners.__
 - __My second category is going to be WWE Champions.__
 
-![]
+
 
 
 ## first category royal rumble
@@ -119,3 +132,14 @@
 - I would like to add audio whenever you click a answer.
 - I would like to add a timer to make the game more intresting.
 - I would like to fix it so that my category
+
+
+## Technologies used 
+- (Javascript, CSS, and HTML)
+
+
+
+## Attributions 
+- (https://developer.mozilla.org/en-US/)
+- (Youtube) !
+- (Google)
