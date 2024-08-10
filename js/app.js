@@ -171,13 +171,33 @@ function loadQuestion() {
     })
 }
 
+function checkAnswer(selectAnswer) {
+    const currentQuizData = questions[currentCategory][currentQuestion]
+    if (selectedAnswer === currentQuizData.correctAnswer) {
+        score++;
+
+    }
+}
 
 
 
 
 
 
+categorySelect.addEventListener('change', handleCategoryChange)
 
+function handleCategoryChange(event) {
+    currentCategory = event.target.value
+    currentQuestion = 0
+    render()
+}
+
+startButton.addEventListener('click', startQuiz)
+submitButton.addEventListener('click', () => {
+    if (quizActive) {
+        checkAnswer()
+    }
+})
 
 
 
