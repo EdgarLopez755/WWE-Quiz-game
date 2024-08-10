@@ -6,6 +6,8 @@ const resetButton = document.getElementById('reset-btn');
 const winMessage = document.getElementById('win-message');
 const loseMessage = document.getElementById('lose-message');
 const categorySelect = document.getElementById('category-select')
+const scoreBox = document.getElementById('score-box')
+
 
 
 
@@ -153,6 +155,8 @@ function render() {
         resetButton.style.display = 'none'
         winMessage.textContent = ''
         loseMessage.textContent = ''
+        scoreBox.textContent = `Score: ${score}`
+        
     }
 }
 
@@ -161,6 +165,7 @@ function loadQuestion() {
         return;
     }
     const currentQuizData = questions[currentCategory][currentQuestion];
+
     question.textContent = currentQuizData.question
 
     choices.innerHTML = ''
@@ -175,6 +180,7 @@ function checkAnswer(selectAnswer) {
     const currentQuizData = questions[currentCategory][currentQuestion]
     if (selectAnswer === currentQuizData.correctAnswer) {
         score++;
+        scoreBox.textContent = `Score: ${score}`
     } else {
         wrongAnswers++
     }
@@ -239,7 +245,7 @@ init()
 
 
 
-
+// GRAVEYARD
 
 
 
