@@ -65,7 +65,7 @@ let questions = [
 
 
 
- let currentCategory = 'category1';
+let currentCategory = 'category1';
 let currentQuestion = 0;
 let score = 0;
 let wrongAnswers = 0;
@@ -76,6 +76,26 @@ let gameEnded = false;
 
 function init() {
     render()
+}
+
+function render() {
+    if (gameEnded) {
+        if (score >= questions[currentCategory].length / 2) {
+            winMessage.textContent = 'You Win!'
+        } else {
+            loseMessage.textContent = 'You Lose!'
+        }
+        submitButton.style.display = 'none'
+        resetButton.style.display = 'black'
+    } else if (quizActive) {
+        
+    } else {
+        startButton.style.display = 'block'
+        submitButton.style.display = 'none'
+        resetButton.style.display = 'none'
+        winMessage.textContent = ''
+        loseMessage.textContent = ''
+    }
 }
 
 
