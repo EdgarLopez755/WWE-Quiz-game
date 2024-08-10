@@ -175,9 +175,22 @@ function checkAnswer(selectAnswer) {
     const currentQuizData = questions[currentCategory][currentQuestion]
     if (selectedAnswer === currentQuizData.correctAnswer) {
         score++;
-
+    } else {
+        wrongAnswers++
     }
+    currentQuestion++
+    if (currentQuestion < questions[currentCategory].length && wrongAnswers < 5) {
+        loadQuestion()
+    } else {
+        gameEnded = true
+    }
+    render()
 }
+
+
+
+   
+
 
 
 
@@ -198,6 +211,17 @@ submitButton.addEventListener('click', () => {
         checkAnswer()
     }
 })
+
+resetButton.addEventListener('click', resetQuiz)
+
+choices.addEventListener('click', (event) => {
+    const selectAnswer = event.target.textContent
+    checkAnswer(selectAnswer)
+})
+
+init()
+
+
 
 
 
