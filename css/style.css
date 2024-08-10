@@ -128,3 +128,13 @@ p {
     text-align: center;
     margin-top: 10px;
 }
+
+#category-select {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: whitesmoke;
+
+}

@@ -1,4 +1,3 @@
-
 const question = document.getElementById('question');
 const choices = document.getElementById('answer-choices');
 const submitButton = document.getElementById('submit-btn');
@@ -6,6 +5,8 @@ const startButton = document.getElementById('start-btn');
 const resetButton = document.getElementById('reset-btn');
 const winMessage = document.getElementById('win-message');
 const loseMessage = document.getElementById('lose-message');
+
+
 
 let questions = [
   {
@@ -63,11 +64,22 @@ let questions = [
  ];
 
 
+
+ let currentCategory = 'category1';
 let currentQuestion = 0;
 let score = 0;
 let wrongAnswers = 0;
 let quizActive = false;
 let gameEnded = false;
+
+
+
+function init() {
+    render()
+}
+
+
+
 
 
 
