@@ -11,6 +11,8 @@
 ## GitHub Deployed link:
 - (https://edgarlopez755.github.io/WWE-Quiz-game/)
 
+# Planning Materials (user stories/pseudocode)
+
 
 
 
@@ -29,7 +31,7 @@
 
 ## Pseudocode
 
-<!-- - Define const for quiz board 
+- Define const for quiz board 
 - Define const for our questions with the the question, answer, and correct answer
 - Define a variable to invoke the init() function
 - Define a variable for the current question
@@ -41,7 +43,7 @@
 - Invoke a function with if else if the player gets 80% they win or else they lose.
 - __Invoke a function to keep track of the total score.__
 - __Define a variable for audio when the player submits a question.__
-- __Define a variable for the current category the player is in.__ -->
+- __Define a variable for the current category the player is in.__
 
 
 
