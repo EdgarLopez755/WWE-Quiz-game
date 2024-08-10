@@ -133,7 +133,7 @@
 - I would like to make it fit into a box that fits my questions and answer choices.
 - I would like to add audio whenever you click a answer.
 - I would like to add a timer to make the game more intresting.
-- I would like to fix it so that my category
+
 
 
 ## Technologies used 
