@@ -1,4 +1,4 @@
-@import url('http:..fonts.googleapis.com/css?family=Angor&display=swap');
+
 
 
 
@@ -6,7 +6,6 @@ body {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    font-family: "Angor", serif;
     font-weight: 100px;
     font-style: normal;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRxC3taIl6nAZG7o83d9GNS-ewf0trtqfvQ&s);
@@ -33,6 +32,9 @@ body {
 #quiz-box {
     display: flex;
     flex-direction: column;
+    border: 8px beige;
+    border-radius: 20px;
+
     
 
 }
@@ -42,17 +44,27 @@ body {
     font-weight: bold;
     margin-bottom: 25px;
     display: flex;
+    color: red;
 }
 
 #answer-choices {
     list-style: none;
     padding: 0;
     display: flex;
+    color: red;
+    flex-direction: column;
+    margin: 10px;
+    border: 8px beige;
+    border-radius: 20px;
+
+
+
 }
 
 #answer-choices li {
     margin: 10px 0;
     display: flex;
+    color: red;
 }
 
 #start-btn {
@@ -111,3 +123,8 @@ p {
     
 }
 
+#win-message, #lose-message {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
