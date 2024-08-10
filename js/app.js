@@ -173,7 +173,7 @@ function loadQuestion() {
 
 function checkAnswer(selectAnswer) {
     const currentQuizData = questions[currentCategory][currentQuestion]
-    if (selectedAnswer === currentQuizData.correctAnswer) {
+    if (selectAnswer === currentQuizData.correctAnswer) {
         score++;
     } else {
         wrongAnswers++
@@ -188,12 +188,22 @@ function checkAnswer(selectAnswer) {
 }
 
 
+function startQuiz() {
+    quizActive = true
+    render()
+}
 
-   
 
-
-
-
+function resetQuiz() {
+    currentQuestion = 0
+    score = 0
+    wrongAnswers = 0
+    quizActive = false
+    gameEnded = false
+    winMessage.textContent = ''
+    loseMessage.textContent = ''
+    location.reload()
+}
 
 
 
